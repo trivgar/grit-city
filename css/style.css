@@ -1,0 +1,101 @@
+/* Grit City Sim Racing - Brand Colors */
+:root {
+    --charcoal: #1a1a1a;
+    --charcoal-light: #2d2d2d;
+    --rust: #c45c26;
+    --rust-light: #e07035;
+    --cream: #f5f0e6;
+    --cream-dark: #d9d4c8;
+    --green-hell: #2d4a2d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--charcoal);
+    color: var(--cream);
+    min-height: 100vh;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    background: 
+        linear-gradient(135deg, var(--charcoal) 0%, var(--charcoal-light) 100%);
+}
+
+.content {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: clamp(3rem, 12vw, 6rem);
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    color: var(--cream);
+    line-height: 0.9;
+    text-shadow: 4px 4px 0 var(--rust);
+}
+
+h2 {
+    font-size: clamp(1.2rem, 4vw, 2rem);
+    font-weight: 400;
+    letter-spacing: 0.4em;
+    color: var(--rust);
+    margin-bottom: 1.5rem;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: var(--cream-dark);
+    margin-bottom: 2rem;
+}
+
+.server-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.badge {
+    background: var(--rust);
+    color: var(--cream);
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.server-name {
+    background: var(--green-hell);
+    color: var(--cream);
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.track {
+    color: var(--cream-dark);
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+    border: 1px solid var(--cream-dark);
+}
+
+.coming-soon {
+    font-size: 0.9rem;
+    color: var(--rust-light);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
