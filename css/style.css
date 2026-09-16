@@ -139,3 +139,25 @@ h2 {
         font-size: 1.25rem;
     }
 }
+
+/* Quiet builder credit, pinned to the bottom of the hero. The hero is
+   min-height:100vh, so a footer after it would fall below the fold. */
+.hero {
+    position: relative;
+}
+
+.built-by {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+}
+
+.built-by a {
+    color: #777;
+    text-decoration: none;
+}
